@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Montserrat sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  min-height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.product-image {
+  flex: 1;
+  padding: 0;
+  min-width: 50%;
+  width: 100%;
+  background: url(./images/image-product-desktop.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+.product-preview {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  padding-left: 2rem;
+  gap: 3rem;
+
+}
+
+.product-preview p:first-child {
+  text-align: left;
+  font-family: Montserrat;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+
+.product-preview h1 {
+  font-family: Fraunces;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  font-size: 2.5rem;
+  line-height: 1;
+  padding-right: 3rem;
+}
+
+.product-preview p:last-of-type {
+  font-family: Montserrat;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.4;
+  padding-right: 3rem;
+} 
+
+.product-price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-right: 4rem;
+}
+
+.product-price span:first-of-type {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.product-price span:last-of-type {
+  font-family: Montserrat;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  height: 3rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 481px) and (min-width: 320px) {
+
+  body{
+  padding: 2rem 1rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .product-preview {
+    flex: 1; 
+    width: 100%;
+    gap: 1.5rem;
+  }
+  
+  .product-image  {
+    background: url(./images/image-product-mobile.jpg);
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+    flex: 1;
+    width: 100%;
+  }
+
+  .product-preview h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 480px) {
+
+  body{
+  padding: 2rem 4rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .product-preview {
+    flex: 1; 
+    width: 100%;
+    gap: 1.5rem;
+  }
+  
+  .product-image  {
+    background: url(./images/image-product-mobile.jpg);
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+    flex: 1;
+    width: 100%;
+  }
+
+  .product-preview h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 950px) and (min-width: 701px) {
+
+  body{
+  padding: 2rem 4rem;
+  }
+
+
+
+  .product-preview {
+    flex: 1; 
+    width: 100%;
+    gap: 1.5rem;
+  }
+  
+  .product-image  {
+    background: url(./images/image-product-mobile.jpg);
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+    flex: 1;
+    width: 100%;
+  }
+
+  .product-preview h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
